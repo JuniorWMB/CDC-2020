@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
   max-width: 1240px;
+  font-family: "Playfair Display", serif;
 }
 
 html {
@@ -30,10 +31,14 @@ ul {
 /******************************** Header Nav menu **************************************/
 .menu__container {
   position: relative;
+  background: black;
+  width: 100vw;
   z-index: 10;
 }
 .menu {
-  position: relative;
+  /* position: relative; */
+  left: 0;
+  position: fixed;
   border-right: white 1px solid;
   display: flex;
   align-items: center;
@@ -43,6 +48,7 @@ ul {
   height: 100%;
   z-index: 10;
   color: white;
+  mix-blend-mode: difference;
 }
 .menu__nav {
   display: flex;
@@ -91,7 +97,7 @@ ul {
   bottom: 0;
 } */
 
-.menu__showorhidden {
+/* .menu__showorhidden {
   z-index: 9;
   top: 0;
   bottom: 0;
@@ -103,18 +109,77 @@ ul {
 }
 .menu__show {
   background-color: black;
-  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  position: sticky;
   height: 100%;
   width: 100%;
 }
-/* .menu__show2 {
-  position: relative;
+.menu__show2 {
+  position: fixed;
   background: rebeccapurple;
   height: 100%;
+  width: 70%;
   overflow: hidden;
 } */
+
+/************************************** Navigation ***************************************/
+
+/* .navigation__title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation__menu h2 {
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+  color: white;
+  text-transform: uppercase;
+}
+.navigation__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100px;
+  margin-left: 100px;
+}
+.navigation__rightbottom {
+  display: flex;
+}
+.navigation__rightbottom p {
+  margin: 0 10px 20px 10px;
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-size: 0.9em;
+  color: white;
+  text-transform: uppercase;
+}
+.navigation__menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+.picture {
+} */
+
+/************************************** picture ***************************************/
+
+.picture {
+  height: 70vh;
+  width: 100vw;
+  object-fit: cover;
+}
+.text__deroulant {
+  height: 40vh;
+  width: 100vw;
+
+  background-color: black;
+}
