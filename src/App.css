@@ -176,10 +176,94 @@ ul {
   height: 70vh;
   width: 100vw;
   object-fit: cover;
+  /* backdrop-filter: ; */
 }
 .text__deroulant {
-  height: 40vh;
+  height: 100vh;
   width: 100vw;
-
   background-color: black;
 }
+.text__deroulant h2 {
+  color: white;
+  mix-blend-mode: difference;
+  z-index: 7;
+  font-weight: 900;
+  font-size: 7em;
+  text-transform: uppercase;
+  overflow: scroll;
+}
+/* .background__text {
+  z-index: 9;
+} */
+.text_h2 {
+  height: 100px;
+}
+/***** supprime above *******/
+.text__conquerant {
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start; */
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  top: -90px;
+  display: flex;
+  justify-content: center;
+}
+.text__conquerant span {
+  color: white;
+  font-weight: 900;
+  font-size: 3.9em;
+  text-transform: uppercase;
+  /* overflow: hidden; */
+}
+.text__icon {
+  margin: 0 5px;
+}
+
+/* ---------------------------- */
+/* Défilement de droite à gauche */
+.message {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.message span {
+  white-space: nowrap;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(100%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+section .scroll {
+  width: 100%;
+}
+
+section .scroll div {
+  white-space: nowrap;
+  animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(100);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/************************************** Many Block ***************************************/

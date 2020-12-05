@@ -60,7 +60,7 @@ function Header() {
         </div>
         <p>By Junior Wembopa</p>
         <p>
-          <b>Conquerant</b>
+          <b>Conquerants</b>
         </p>
         <div className="menu__right ">
           <p>Caen</p>
