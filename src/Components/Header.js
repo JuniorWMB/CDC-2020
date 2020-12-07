@@ -44,7 +44,12 @@ function Header() {
     } else if (state.clicked === true) {
       tl.from(".menu__show2", { x: 200, opacity: 1 });
     }
-  }, [tl]);
+    tl.from(".menu__container", {
+      delay: 3,
+      duration: 8,
+      opacity: 0,
+    });
+  }, []);
 
   return (
     <div className="menu__container">

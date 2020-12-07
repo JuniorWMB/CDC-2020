@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 body {
   background-color: #fafafa;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+
   margin: 0;
+  padding: 0;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  box-sizing: border-box;
   max-width: 1240px;
   font-family: "Playfair Display", serif;
 }
 
 html {
-  padding: 0 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -206,41 +206,27 @@ ul {
   justify-content: flex-start; */
   background: black;
   width: 100vw;
-  height: 100vh;
-  top: -90px;
+  height: 50vh;
+  top: -5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .text__conquerant span {
   color: white;
   font-weight: 900;
-  font-size: 3.9em;
+  font-size: 5.9em;
   text-transform: uppercase;
-  /* overflow: hidden; */
 }
 .text__icon {
   margin: 0 5px;
 }
+.text__conquerant section {
+  bottom: 138px;
+}
 
 /* ---------------------------- */
 /* Défilement de droite à gauche */
-.message {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.message span {
-  white-space: nowrap;
-  animation: animate 20s linear infinite;
-}
-@keyframes animate {
-  0% {
-    transform: translate(100%);
-  }
-  100% {
-    transform: translate(-100%);
-  }
-}
 
 section {
   position: relative;
@@ -254,7 +240,7 @@ section .scroll {
 
 section .scroll div {
   white-space: nowrap;
-  animation: animate 15s linear infinite;
+  animation: animate 10s linear infinite;
 }
 
 @keyframes animate {
@@ -266,4 +252,50 @@ section .scroll div {
   }
 }
 
-/************************************** Many Block ***************************************/
+/************************************** Resultat Block ***************************************/
+.resultat__contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 240px;
+  color: white;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.resultat__score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid wheat;
+  height: 170px;
+  width: 700px;
+  border-radius: 25px;
+}
+.resultat__score span {
+  margin: 0 10px;
+  font-family: "Anton", sans-serif;
+  font-size: 1.9em;
+}
+.resultat__score h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.9em;
+  color: #eab543;
+}
+.resultat {
+  position: relative;
+  left: 100px;
+}
+.resultat p {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.resultat__score2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
