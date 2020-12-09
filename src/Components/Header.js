@@ -21,7 +21,7 @@ function Header() {
         clicked: !state.clicked,
       });
       console.log("1");
-    } else {
+    } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
       });
@@ -31,32 +31,57 @@ function Header() {
 
   // useEffect(() => {
   //   if (state.clicked === false) {
-  //     menu.style.display = "none";
+  //     tl.from(".menu__showorhidden", { css: { left: -100 } });
   //   } else if (state.clicked === true) {
-  //     menu.style.display = "block";
-  //     tl.to(".menu__show2", {});
+  //     // menu.style.display = "block";
+  //     tl.from(".menu__showorhidden", { css: { left: 0 } });
   //   }
-  // }, [state.clicked]);
+  // }, []);
 
   useEffect(() => {
     if (state.clicked === false) {
-      tl.to(".menu__show2", { duration: 0, css: { display: "none" } });
+      tl.to(menu, {
+        ease: "expo.out",
+        css: { left: "-100%" },
+      });
     } else if (state.clicked === true) {
-      tl.from(".menu__show2", { x: 200, opacity: 1 });
+      tl.to(menu, {
+        ease: "expo.out",
+        css: { left: 0 },
+      });
     }
-    tl.from(".menu__container", {
-      delay: 3,
-      duration: 8,
-      opacity: 0,
-    });
-  }, []);
+  }, [state.clicked, tl]);
+
+  //   const tl = gsap.timeline();
+  // tl.from("#target", {
+  //   scale: 0.5,
+  //   ease:"power3.inOut"
+  // });
+  // tl.reversed(true);
+
+  // function animateIt() {
+  //   tl.reversed(!tl.reversed());
+  // }
+
+  // useEffect(() => {
+  //   if (state.clicked === false) {
+  //     tl.to(".menu__show2", { duration: 0, css: { display: "none" } });
+  //   } else if (state.clicked === true) {
+  //     tl.from(".menu__show2", { x: 200, opacity: 1 });
+  //   }
+  //   tl.from(".menu__container", {
+  //     delay: 3,
+  //     duration: 8,
+  //     opacity: 0,
+  //   });
+  // }, []);
 
   return (
     <div className="menu__container">
-      <div className="menu__showorhidden">
-        <div className="menu__show"></div>
-        <div ref={(el) => (menu = el)} className="menu__show2">
-          <Navigation />
+      <div ref={(el) => (menu = el)} className="menu__showorhidden">
+        {/* <div className="menu__show"></div> */}
+        <div className="menu__show2">
+          <Navigation handleClick={handleClick} />
         </div>
       </div>
       <header className="menu">

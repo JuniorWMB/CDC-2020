@@ -69,9 +69,6 @@ ul {
 .menu__xxx {
   display: flex;
   align-items: center;
-  /* border-top: 2px solid black;
-  margin-top: 10px;
-  padding-top: 10px; */
 }
 .space__arround {
   display: flex;
@@ -79,96 +76,17 @@ ul {
 
 /************************************** Menu hidden ***************************************/
 
-/* .menu__showorhidden {
-  position: absolute;
-  border: 1px solid red;
+.menu__showorhidden {
+  position: fixed;
+  background-color: rgba(234, 181, 67, 0.37);
   width: 60%;
-  height: 100%;
+  height: 100vh;
   z-index: 3;
-}
-.menu__show {
-  position: absolute;
-  background-color: royalblue;
-  height: 100%;
-  z-index: 3;
-  left: 0;
+  left: -100%;
   right: 0;
   top: 0;
   bottom: 0;
-} */
-
-/* .menu__showorhidden {
-  z-index: 9;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-  height: 100%;
-  width: 100%;
 }
-.menu__show {
-  background-color: black;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: sticky;
-  height: 100%;
-  width: 100%;
-}
-.menu__show2 {
-  position: fixed;
-  background: rebeccapurple;
-  height: 100%;
-  width: 70%;
-  overflow: hidden;
-} */
-
-/************************************** Navigation ***************************************/
-
-/* .navigation__title {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navigation__menu h2 {
-  font-weight: 900;
-  font-family: "Playfair Display", serif;
-  font-size: 4em;
-  color: white;
-  text-transform: uppercase;
-}
-.navigation__right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100px;
-  margin-left: 100px;
-}
-.navigation__rightbottom {
-  display: flex;
-}
-.navigation__rightbottom p {
-  margin: 0 10px 20px 10px;
-  font-weight: 900;
-  font-family: "Playfair Display", serif;
-  font-size: 0.9em;
-  color: white;
-  text-transform: uppercase;
-}
-.navigation__menu {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-  margin-left: 100px;
-}
-
-.picture {
-} */
 
 /************************************** picture ***************************************/
 
@@ -176,6 +94,7 @@ ul {
   height: 70vh;
   width: 100vw;
   object-fit: cover;
+  object-position: center;
   /* backdrop-filter: ; */
 }
 .text__deroulant {
@@ -192,21 +111,16 @@ ul {
   text-transform: uppercase;
   overflow: scroll;
 }
-/* .background__text {
-  z-index: 9;
-} */
+
 .text_h2 {
   height: 100px;
 }
 /***** supprime above *******/
 .text__conquerant {
   position: relative;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start; */
   background: black;
   width: 100vw;
-  height: 50vh;
+  height: 32vh;
   top: -5px;
   display: flex;
   flex-direction: column;
@@ -215,14 +129,14 @@ ul {
 .text__conquerant span {
   color: white;
   font-weight: 900;
-  font-size: 5.9em;
+  font-size: 7.9em;
   text-transform: uppercase;
 }
 .text__icon {
   margin: 0 5px;
 }
 .text__conquerant section {
-  bottom: 138px;
+  bottom: 40px;
 }
 
 /* ---------------------------- */
@@ -258,10 +172,11 @@ section .scroll div {
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 240px;
+  bottom: 260px;
   color: white;
   width: 100vw;
   box-sizing: border-box;
+  border: turquoise 2px solid;
 }
 .resultat__score {
   display: flex;
@@ -299,3 +214,35 @@ section .scroll div {
   justify-content: center;
   width: 100%;
 }
+
+/************************************** Navigation ***************************************/
+
+.navigation__container {
+  display: flex;
+  color: #ffffff;
+  font-size: 900;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  font-size: 5em;
+}
+.ok {
+  overflow: hidden;
+  border: rebeccapurple 1px solid;
+}
+.nav__crossandinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+  cursor: pointer;
+}
+/* .nav__crossandinfo:nth-child(3) {
+  color: red;
+} */

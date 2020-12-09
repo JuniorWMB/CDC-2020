@@ -13,32 +13,32 @@ function TextConquerant() {
           <div>
             <span style={{ marginLeft: "10px" }}> Conquerants de caen</span>
             <span style={{ marginLeft: "10px" }}>
-              <ImCross color="#EAB543" size={69} />
-              <MdPanoramaFishEye size={72} />
-              <ImCross color="#EAB543" size={69} />
+              <ImCross color="#EAB543" size={90} />
+              <MdPanoramaFishEye size={95} />
+              <ImCross color="#EAB543" size={90} />
             </span>
             <span style={{ marginLeft: "10px" }}>protect the land /</span>
             <span style={{ marginLeft: "10px" }}>Conquerants de caen</span>
             <span style={{ marginLeft: "10px" }}>
-              <ImCross color="#EAB543" size={69} />
-              <MdPanoramaFishEye size={72} />
-              <ImCross color="#EAB543" size={69} />
-            </span>
-            <span style={{ marginLeft: "10px" }}>protect the land /</span>
-
-            <span style={{ marginLeft: "10px" }}>Conquerants de caen</span>
-            <span style={{ marginLeft: "10px" }}>
-              <ImCross color="#EAB543" size={69} />
-              <MdPanoramaFishEye size={72} />
-              <ImCross color="#EAB543" size={69} />
+              <ImCross color="#EAB543" size={90} />
+              <MdPanoramaFishEye size={95} />
+              <ImCross color="#EAB543" size={90} />
             </span>
             <span style={{ marginLeft: "10px" }}>protect the land /</span>
 
             <span style={{ marginLeft: "10px" }}>Conquerants de caen</span>
             <span style={{ marginLeft: "10px" }}>
-              <ImCross color="#EAB543" size={69} />
-              <MdPanoramaFishEye size={72} />
-              <ImCross color="#EAB543" size={69} />
+              <ImCross color="#EAB543" size={90} />
+              <MdPanoramaFishEye size={95} />
+              <ImCross color="#EAB543" size={90} />
+            </span>
+            <span style={{ marginLeft: "10px" }}>protect the land /</span>
+
+            <span style={{ marginLeft: "10px" }}>Conquerants de caen</span>
+            <span style={{ marginLeft: "10px" }}>
+              <ImCross color="#EAB543" size={90} />
+              <MdPanoramaFishEye size={95} />
+              <ImCross color="#EAB543" size={90} />
             </span>
             <span style={{ marginLeft: "10px" }}>protect the land /</span>
           </div>
