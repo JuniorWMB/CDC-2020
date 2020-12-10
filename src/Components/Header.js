@@ -81,12 +81,12 @@ function Header() {
       <div ref={(el) => (menu = el)} className="menu__showorhidden">
         {/* <div className="menu__show"></div> */}
         <div className="menu__show2">
-          <Navigation handleClick={handleClick} />
+          <Navigation handleClick={handleClick} size={60} />
         </div>
       </div>
       <header className="menu">
         <div className="menu__nav">
-          <MdViewHeadline onClick={handleClick} />
+          <MdViewHeadline onClick={handleClick} size={30} />
         </div>
         <p>By Junior Wembopa</p>
         <p>

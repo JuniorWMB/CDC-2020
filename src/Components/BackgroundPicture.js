@@ -9,13 +9,13 @@ gsap.registerPlugin(ExpoScaleEase);
 function BackgroundPicture() {
   let tl = gsap.timeline();
 
-  useEffect(() => {
-    tl.fromTo(
-      ".picture",
-      { scale: 8 },
-      { duration: 3, scale: 1, ease: ExpoScaleEase.config(8, 1) }
-    );
-  }, []);
+  // useEffect(() => {
+  //   tl.fromTo(
+  //     ".picture",
+  //     { scale: 8 },
+  //     { duration: 3, scale: 1, ease: ExpoScaleEase.config(8, 1) }
+  //   );
+  // }, []);
   return (
     <div className="background__text">
       <img className="picture" src={conquerant} alt="test" />

@@ -1,23 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { RiCloseCircleLine } from "react-icons/ri";
 
 /* importation de gsap*/
 import gsap from "gsap";
 
 function Navigation({ handleClick }) {
-  let text = useRef(null);
   let tl = gsap.timeline();
+
   useEffect(() => {
-    tl.to(".ok1", {
-      duration: 2,
-      y: 500,
-      ease: "power4.out",
-      opacity: 0,
+    tl.from(".ok1", {
+      duration: 1,
       delay: 1,
-      skewY: 7,
-      css: { color: "red" },
+      y: 100,
       stagger: {
-        amount: 0.3,
+        amount: 0.5,
       },
     });
   }, [tl]);
@@ -28,9 +24,15 @@ function Navigation({ handleClick }) {
         <div className="ok">
           <p className="ok1">Actualités</p>
         </div>
-        <div>Résultats</div>
-        <div>Equipements</div>
-        <div>Roster</div>
+        <div className="ok">
+          <p className="ok1">Résultats</p>
+        </div>
+        <div className="ok">
+          <p className="ok1">Equipements</p>
+        </div>
+        <div className="ok">
+          <p className="ok1">Roster</p>
+        </div>
       </div>
       <div className="nav__crossandinfo">
         <RiCloseCircleLine onClick={handleClick} size={55} />

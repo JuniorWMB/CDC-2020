@@ -230,12 +230,18 @@ section .scroll div {
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
-  font-size: 5em;
+  font-size: 3.5em;
+  margin-left: 70px;
+  text-transform: uppercase;
+  /* border: rebeccapurple 2px solid; */
+  height: 90vh;
 }
 .ok {
   overflow: hidden;
-  border: rebeccapurple 1px solid;
+  width: 500px;
+  /* position: relative; */
 }
+
 .nav__crossandinfo {
   display: flex;
   flex-direction: column;
@@ -243,6 +249,80 @@ section .scroll div {
   margin: 20px 0;
   cursor: pointer;
 }
-/* .nav__crossandinfo:nth-child(3) {
-  color: red;
-} */
+
+/************************************** Navigation ***************************************/
+
+.post {
+  height: 100vh;
+  width: 100vw;
+  background: rebeccapurple;
+  position: relative;
+  top: -21px;
+}
+.post__actu {
+  border: red 2px solid;
+  height: 100vh;
+  width: 90%;
+  position: absolute;
+  left: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+.post__picture {
+  border: blue 2px solid;
+  height: 50vh;
+  width: 48%;
+}
+.post__post {
+  border: black 2px solid;
+  height: 100vh;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.post__score {
+  border: pink 2px solid;
+  height: 10%;
+  display: flex;
+}
+.score__dom,
+.score__ext {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  flex: 1;
+}
+.score__dom {
+  justify-content: flex-end;
+}
+.score__space {
+  border: pink 2px solid;
+}
+
+.score__dom span {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.score__dom p {
+  margin: 0 10px;
+}
+
+.score__ext span {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.score__ext p {
+  margin: 0 10px;
+}
+
+.score__space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post__information {
+  border: olivedrab 2px solid;
+  height: 88%;
+}
